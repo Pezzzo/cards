@@ -1,0 +1,26 @@
+.sticker {
+  position: absolute;
+  top: 0;
+  left: -0.5px;
+  margin: 0;
+  padding: 12px 27px;
+  font-weight: $font-semibold;
+  font-size: 12px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 12px;
+
+  &--yellow {
+    color: $black-light;
+    background-color: $yellow;
+  }
+
+  &--violet {
+    color: $base-white;
+    background-color: $violet;
+  }
+
+  &--blue {
+    color: $base-white;
+    background-color: $blue;
+  }
+}

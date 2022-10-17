@@ -1,0 +1,64 @@
+.excursion-info__list {
+  max-width: 340px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.excursion-info__item {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 36px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 16px;
+    height: 12px;
+    background: url("../img/icons/check-mark.svg") 50% 50% no-repeat;
+    content: "";
+  }
+
+  &--next-flights {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+
+    @media (min-width: $tablet) {
+      align-items: center;
+    }
+    @media (min-width: $desktop) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
+
+.excursion-info__text {
+  align-self: start;
+  margin: 0 8px 0 0;
+  color: $grey;
+
+  @media (min-width: $tablet) {
+    color: $black-light;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+  }
+
+  &--no-wrap {
+    padding-left: 36px;
+  }
+}

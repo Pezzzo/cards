@@ -1,0 +1,36 @@
+.outer-wrapper {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  @include padding-x(17px, 17px);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.uppercase-mod {
+  text-transform: uppercase;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.display-none {
+  display: none;
+}

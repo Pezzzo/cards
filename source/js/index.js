@@ -8,7 +8,6 @@ const cards = document.querySelector('.section-cards');
 list.forEach((el) => {
   if (el.offsetHeight > 38) {
     el.classList.add('next-flights__list--hidden');
-    console.log(el);
   }
 });
 
